@@ -17,12 +17,12 @@ import static org.bytedeco.opencv.global.opencv_core.*;
 import static org.bytedeco.opencv.global.opencv_dnn.*;
 import static org.bytedeco.opencv.global.opencv_imgproc.*;
 
-public class InformativeDrawingsNetwork extends BaseNeuralNetwork<ImageResult> {
+public class MLSDNetwork extends BaseNeuralNetwork<ImageResult> {
   private Path model;
   private Net net;
   private int dim = 512;
   
-  public InformativeDrawingsNetwork(Path model) {
+  public MLSDNetwork(Path model) {
     this.model = model;
   }
 

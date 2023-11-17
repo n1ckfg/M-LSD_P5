@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.nio.file.Path;
 
 DeepVision vision;
-InformativeDrawingsNetwork network;
+MLSDNetwork network;
 
 String url = "anime_style_512x512_simplified.onnx";
 //String url = "contour_style_512x512_simplified.onnx";
@@ -19,7 +19,7 @@ void modelSetup() {
   
   println("Loading model from " + url);
   Path model = Paths.get(url).toAbsolutePath();
-  network = new InformativeDrawingsNetwork(model);
+  network = new MLSDNetwork(model);
   network.setup();
 }
 
