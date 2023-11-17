@@ -8,9 +8,10 @@ import java.nio.file.Path;
 DeepVision vision;
 MLSDNetwork network;
 
-String url = "anime_style_512x512_simplified.onnx";
-//String url = "contour_style_512x512_simplified.onnx";
-//String url = "opensketch_style_512x512_simplified.onnx";
+String url = "mlsd_512x512_large.onnx";
+//String url = "mlsd_512x512_tiny.onnx";
+//String url = "mlsd_320x320_large.onnx";
+//String url = "mlsd_320x320_tiny.onnx";
 
 void modelSetup() {
   vision = new DeepVision(this);
